@@ -18,6 +18,7 @@ a {
   background: url('../images/wallpaper3.jpg');
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .HeroGroup {
@@ -41,7 +42,7 @@ a {
 }
 
 .Hero p {
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.8);
   opacity: 0;
@@ -75,7 +76,7 @@ a {
   }
 
   .Hero p {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -87,5 +88,25 @@ a {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.Hero svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.Hero .Logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 40px;
+  margin: 100px 0;
+  justify-items: center;
+}
+
+@media (max-width: 640px) {
+  .Hero .Logos {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
